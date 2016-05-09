@@ -38,7 +38,7 @@ If FILE already exists, signal an error."
          (when new
            (dired-add-file new)
            (dired-move-to-filename))))))
-(after-load 'ruby-mode
+(eval-after-load 'ruby-mode
 
 	    (eval-after-load 'company
 	      '(push 'company-robe company-backends))
